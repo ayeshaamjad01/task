@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:provider/provider.dart';
+import 'package:task/carousel_screen.dart';
 import 'package:task/home_screen.dart';
-import 'package:task/splash_scree.dart';
+import 'package:task/splash_screen.dart';
 import 'package:task/theme_provider.dart';
 
 void main() {
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
       themeMode: Provider.of<ThemeProvider>(context).isDarkMode
           ? ThemeMode.dark
           : ThemeMode.light,
-      home: SplashScreen(),
+      home: CarouselScreen(),
     );
   }
 }
