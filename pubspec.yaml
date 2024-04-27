@@ -61,7 +61,12 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+   - assets/images/5d561af94f8008552ee236b778605983.gif
+   - assets/images/9a282037e324647ac6d7909be3403145.jpeg
+   - assets/images/4dd4c0123b65a00afe9a99c8646bac7c.jpeg
+   - assets/images/5fea58a5f4b1727f2ad402791a1542af.jpeg
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
@@ -76,10 +81,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Urbanist-VariableFont_wght
+      fonts:
+        - asset: assets/fonts/Urbanist-VariableFont_wght.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

@@ -5,6 +5,7 @@ import 'package:task/carousel_screen.dart';
 import 'package:task/home_screen.dart';
 import 'package:task/splash_screen.dart';
 import 'package:task/theme_provider.dart';
+import 'package:task/wavy_shape.dart';
 
 void main() {
   runApp(
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
           ? ThemeMode.dark
           : ThemeMode.light,
       home: CarouselScreen(),
+      //home: WavyShape(),
     );
   }
 }

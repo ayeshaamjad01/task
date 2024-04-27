@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
-import 'package:task/carousel_screen_two.dart';
+import 'package:task/carousel_screen_three.dart';
 import 'package:task/home_screen.dart';
 import 'package:task/theme_provider.dart';
 import 'package:task/wavy_shape.dart';
 
-class CarouselScreen extends StatefulWidget {
-  const CarouselScreen({super.key});
+class CarouselScreenTwo extends StatefulWidget {
+  const CarouselScreenTwo({super.key});
 
   @override
-  State<CarouselScreen> createState() => _CarouselScreenState();
+  State<CarouselScreenTwo> createState() => _CarouselScreenTwoState();
 }
 
-class _CarouselScreenState extends State<CarouselScreen> {
-  int _currentPageIndex = 0;
+class _CarouselScreenTwoState extends State<CarouselScreenTwo> {
+  int _currentPageIndex = 1;
 
   void _onPageChanged(int index) {
     setState(() {
@@ -63,7 +63,7 @@ class _CarouselScreenState extends State<CarouselScreen> {
                       children: [
                         OvalMaskedImage(
                           imagePath:
-                              'assets/images/9a282037e324647ac6d7909be3403145.jpeg',
+                              'assets/images/5fea58a5f4b1727f2ad402791a1542af.jpeg',
                           // Provide your image path here
                           width: 230, // Adjust width as needed
                           height: 100,
@@ -119,7 +119,7 @@ class _CarouselScreenState extends State<CarouselScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'Discover Great Deals',
+                              'Effortless Selling',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: responsiveSize * 0.09,
@@ -192,7 +192,7 @@ class _CarouselScreenState extends State<CarouselScreen> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                CarouselScreenTwo()),
+                                                CarouselScreenThree()),
                                       );
                                     },
                                     style: ButtonStyle(

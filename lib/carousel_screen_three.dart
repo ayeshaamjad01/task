@@ -3,20 +3,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
-import 'package:task/carousel_screen_two.dart';
 import 'package:task/home_screen.dart';
 import 'package:task/theme_provider.dart';
 import 'package:task/wavy_shape.dart';
 
-class CarouselScreen extends StatefulWidget {
-  const CarouselScreen({super.key});
+class CarouselScreenThree extends StatefulWidget {
+  const CarouselScreenThree({super.key});
 
   @override
-  State<CarouselScreen> createState() => _CarouselScreenState();
+  State<CarouselScreenThree> createState() => _CarouselScreenThreeState();
 }
 
-class _CarouselScreenState extends State<CarouselScreen> {
-  int _currentPageIndex = 0;
+class _CarouselScreenThreeState extends State<CarouselScreenThree> {
+  int _currentPageIndex = 2;
 
   void _onPageChanged(int index) {
     setState(() {
@@ -63,7 +62,7 @@ class _CarouselScreenState extends State<CarouselScreen> {
                       children: [
                         OvalMaskedImage(
                           imagePath:
-                              'assets/images/9a282037e324647ac6d7909be3403145.jpeg',
+                              'assets/images/4dd4c0123b65a00afe9a99c8646bac7c.jpeg',
                           // Provide your image path here
                           width: 230, // Adjust width as needed
                           height: 100,
@@ -119,7 +118,7 @@ class _CarouselScreenState extends State<CarouselScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'Discover Great Deals',
+                              'Promote Your Business',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: responsiveSize * 0.09,
@@ -131,7 +130,7 @@ class _CarouselScreenState extends State<CarouselScreen> {
                               height: screenHeight * 0.02,
                             ),
                             Text(
-                                "Have something to sell? Just snap, upload, and price your items. We've made the process simple and quick. Get your items in front of buyers in no time!",
+                                "Our platform is a powerful tool for businesses as well! Advertise your products or services to a large and engaged audience,",
                                 style: TextStyle(
                                     fontSize: responsiveSize * 0.035,
                                     color: Colors.white,
@@ -191,8 +190,7 @@ class _CarouselScreenState extends State<CarouselScreen> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) =>
-                                                CarouselScreenTwo()),
+                                            builder: (context) => HomeScreen()),
                                       );
                                     },
                                     style: ButtonStyle(
