@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:provider/provider.dart';
-import 'package:task/carousel_screen.dart';
-import 'package:task/home_screen.dart';
 import 'package:task/splash_screen.dart';
 import 'package:task/theme_provider.dart';
-import 'package:task/wavy_shape.dart';
 
 void main() {
   runApp(
@@ -30,8 +26,18 @@ class MyApp extends StatelessWidget {
       themeMode: Provider.of<ThemeProvider>(context).isDarkMode
           ? ThemeMode.dark
           : ThemeMode.light,
-      home: CarouselScreen(),
+      //home: CarouselScreen(),
       //home: WavyShape(),
+      //home: HomePage(),
+      home: SplashScreen(),
+      //home: NewPage(),
+      //home: ScreenSlider(),
+      ////implement the card here with the colors and the buttons
+      //home: Test(),
+      //home: WelcomeScreen(),
+      //home: Images(),
+      //home: HomePageTwo(),
+      //home: PostData(),
     );
   }
 }

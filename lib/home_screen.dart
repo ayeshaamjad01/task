@@ -13,24 +13,29 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Dark Mode App'),
-        ),
         body: Center(
-          child: IconButton(
-            onPressed: () {
-              Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
-            },
-            icon: const Icon(
-              Icons.light,
+      child: Container(
+        child: Column(
+          children: [
+            IconButton(
+              onPressed: () {
+                Provider.of<ThemeProvider>(context, listen: false)
+                    .toggleTheme();
+              },
+              icon: const Icon(
+                Icons.light,
+              ),
+
+              // child: ElevatedButton(
+              //   onPressed: () {
+              //     Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
+              //   },
+              //   child: Text('Toggle Dark Mode'),
+              // ),
             ),
-            // child: ElevatedButton(
-            //   onPressed: () {
-            //     Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
-            //   },
-            //   child: Text('Toggle Dark Mode'),
-            // ),
-          ),
-        ));
+          ],
+        ),
+      ),
+    ));
   }
 }
